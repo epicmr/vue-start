@@ -1,27 +1,21 @@
 <template>
-  <div>
-    Counter:{{counter}}
-  </div>
+  <li>{{todo.name}}</li>
 </template>
 
 //基础模板
 <script>
-import { setInterval } from 'timers';
 export default {
-  name: 'Lesson1',
+  name: 'TodoItem',
   props: {
-    msg: String
+    todo: Object
   },
   data () {
     return {
-      counter: 0
     }
   },
   mounted () {
-    setInterval(
-      () => {
-        this.counter++
-      }, 1000)
+  },
+  methods: {
   }
 }
 </script>
