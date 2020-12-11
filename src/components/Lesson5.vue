@@ -1,6 +1,6 @@
 <template>
   <div>
-    Counter:{{counter}}
+    <input type="text">
   </div>
 </template>
 
@@ -8,10 +8,11 @@
 <script>
 import { setInterval } from 'timers';
 export default {
-  name: 'Lesson1',
+  name: 'Lesson5',
   data () {
     return {
-      counter: 0
+      question: "",
+      answer: {}
     }
   },
   props: {

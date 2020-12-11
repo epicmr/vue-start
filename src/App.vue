@@ -1,16 +1,16 @@
 <template>
-<div>
-  <Lesson3></Lesson3>
-</div>
+  <div>
+    <Lesson4></Lesson4>
+  </div>
 </template>
 
 <script>
-import Lesson3 from './components/Lesson3.vue'
+import Lesson4 from './components/Lesson4.vue'
 
 export default {
   name: 'App',
   components: {
-    Lesson3
+    Lesson4
   }
 }
 </script>

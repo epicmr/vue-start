@@ -17,7 +17,7 @@
 
 //基础模板
 <script>
-import { TodoItem } from './TodoItem.vue'
+import TodoItem from './TodoItem.vue'
 export default {
   name: 'Lesson3',
   components: {
