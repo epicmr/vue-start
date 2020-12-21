@@ -1,16 +1,29 @@
 <template>
   <div>
-    <Lesson6></Lesson6>
+    <Lesson8>
+      <template #header="data">
+        <option :key="item" v-for="item in data.items">{{item}}</option>
+      </template>
+    </Lesson8>
   </div>
 </template>
 
 <script>
-import Lesson6 from './components/Lesson6.vue'
+import Lesson8 from './components/Lesson8.vue'
 
 export default {
   name: 'App',
+  data () {
+    return {
+    }
+  },
   components: {
-    Lesson6
+    Lesson8
+  },
+  methods: {
+    changeSubmit (event) {
+      console.log(event.target.value)
+    }
   }
 }
 </script>
